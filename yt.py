@@ -2,7 +2,12 @@ from pytube import YouTube
 from pytube import Playlist
 from pytube.cli import on_progress
 from os import rename
+from os import system
 from colors import * #color fg bg
+
+def upgrade_pytube():
+	system('python -m pip install pytube')
+	system('python -m pip install git+https://github.com/pytube/pytube')
 
 #Convert .mp4 audio file to .mp3
 def mp3_convert(out_file):
@@ -27,6 +32,7 @@ def printable_size(size):
 		i = i+1
 	return color + str('{:.4f} '.format(size)) + ext[i] + colors.reset
 
+#upgrade_pytube()
 url_list = input('Ingrese la lista de videos: ').split(' ')
 video_list = []
 
