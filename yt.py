@@ -6,8 +6,8 @@ from os import system
 from colors import * #color fg bg
 
 def upgrade_pytube():
-	system('python -m pip install pytube')
-	system('python -m pip install git+https://github.com/pytube/pytube')
+	#system('python -m pip install pytube')
+	#system('python -m pip install git+https://github.com/pytube/pytube')
 
 #Convert .mp4 audio file to .mp3
 def mp3_convert(out_file):
