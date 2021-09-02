@@ -8,7 +8,6 @@ from colors import * #color fg bg
 def upgrade_pytube():
 	system('python -m pip install pytube')
 	system('python -m pip install git+https://github.com/pytube/pytube')
-	print('SE ACTUALIZO PYTUBE')
 
 #Convert .mp4 audio file to .mp3
 def mp3_convert(out_file):
